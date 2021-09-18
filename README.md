@@ -1,16 +1,38 @@
-# photo_app
+# Photo App
 
-A new Flutter project.
+### Local Setup
+We use the following tools with specified version.
 
-## Getting Started
+|Product|Version|
+|--- | ---|
+|Dart|v2.13.1|
+|Flutter|v2.2.1|
+|VSCode|v1.60.1|
 
-This project is a starting point for a Flutter application.
+### Requirements
 
-A few resources to get you started if this is your first Flutter project:
+**For the first time developer**  
+You need to install FVM before move to the next step:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```bash
+% dart pub global activate fvm
+% cd photo_app
+% fvm flutter pub get
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Code structures
+
+```tree
+assets
+├── fonts // Font file
+└── images // Asset images
+lib
+├── common // Global variable
+├── helper // Helper utility classes
+├── model // Modals of data
+├── repository // Repositories for API communication
+├── route // Route settings
+├── theme // Theme file
+├── view // View directories 
+└── widget // Widgets used across the pages
+```
