@@ -8,5 +8,8 @@
     "discover": "Discover",
     "whats_new_today": "what's new today",
     "browse_all": "browse all",
-    "see_more": "see more"
+    "see_more": "see more",
+    "user_name": "User name",
+    "password": "Password",
+    "confirm_password": "Confirm password"
 }

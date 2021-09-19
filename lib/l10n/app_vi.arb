@@ -8,5 +8,8 @@
     "discover": "Khám phá",
     "whats_new_today": "Nổi bật hôm nay",
     "browse_all": "Tất cả",
-    "see_more": "Xem thêm"
+    "see_more": "Xem thêm",
+    "user_name": "Tên đăng nhập",
+    "password": "Mật khẩu",
+    "confirm_password": "Xác nhận mật khẩu"
 }

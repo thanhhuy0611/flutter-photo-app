@@ -30,5 +30,5 @@ class SettingThemeFloatingButton extends StatelessWidget {
     );
   }
 
-  static FloatingActionButtonLocation get location => FloatingActionButtonLocation.miniStartTop;
+  static FloatingActionButtonLocation get location => FloatingActionButtonLocation.miniEndTop;
 }

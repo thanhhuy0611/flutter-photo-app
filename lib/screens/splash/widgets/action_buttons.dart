@@ -17,7 +17,7 @@ class SplashActionButtonsWidget extends StatelessWidget {
             child: CustomOutlinedButton(
               label: (AppLocalizations.of(context)!.log_in).toUpperCase(),
               onTap: () {
-                // TODO 
+                Navigator.of(context).pushNamed(LoginScreen.PAGE_NAME);
               },
             ),
           ),
