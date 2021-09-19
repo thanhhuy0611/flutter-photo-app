@@ -6,6 +6,8 @@ import 'package:photo_app/common/global_config.dart';
 import 'package:photo_app/repository/user_setting.dart';
 import 'package:photo_app/route/app_route.dart';
 import 'package:photo_app/screens/app/cubit/app_cubit.dart';
+import 'package:photo_app/theme/dark_theme.dart';
+import 'package:photo_app/theme/ligh_theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PhotoApp extends StatelessWidget {
@@ -70,7 +72,9 @@ class PhotoApp extends StatelessWidget {
                   BlocProvider.of<AppCubit>(context).init(GlobalConfigs.supportedLocales.first.languageCode);
                   return GlobalConfigs.supportedLocales.first;
                 },
-                // theme: CommonTheme().theme,
+                theme: LightTheme.theme,
+                darkTheme: DarkTheme.theme,
+                themeMode: ThemeMode.dark,
                 onGenerateRoute: AppPageRoute.routes,
               ),
             );
