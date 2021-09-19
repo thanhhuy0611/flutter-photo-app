@@ -46,8 +46,8 @@ class PhotoApp extends StatelessWidget {
                 FocusManager.instance.primaryFocus!.unfocus();
               },
               child: AdaptiveTheme(
-                light: LightTheme.theme,
-                dark: DarkTheme.theme,
+                light: LightTheme().theme,
+                dark: DarkTheme().theme,
                 initial: savedThemeMode ?? AdaptiveThemeMode.light,
                 builder: (theme, darkTheme) => MaterialApp(
                   theme: theme,

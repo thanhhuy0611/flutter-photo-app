@@ -1,21 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:photo_app/theme/base_theme.dart';
 
-class LightTheme {
+class LightTheme extends BaseTheme {
+
+  LightTheme() : super();
   
-  static Color get primaryColor => const Color(0xFF000000);
-  static Color get backgroundColor => const Color(0xFFFFFFFF);
-  static Color get beginGradientColor => const Color(0xFFFF00D6);
-  static Color get endGradientColor => const Color(0xFFFF4D00);
-  static String get fontRoboto => 'Roboto';
-  static String get fontComfortaa => 'Comfortaa';
+  @override
+  Color get primaryColor => const Color(0xFF000000);
 
-  static TextStyle? headLine1 = TextStyle(fontSize: 36.0, fontWeight: FontWeight.w500, fontFamily: fontRoboto);
-  static TextStyle? button = TextStyle(fontSize: 13.0, fontWeight: FontWeight.bold, fontFamily: fontRoboto);
-  static TextStyle? subtitle1 = const TextStyle(fontSize: 13.0, fontWeight: FontWeight.bold);
-  static TextStyle? bodyText1 = const TextStyle(fontSize: 13.0);
-  
+  @override
+  Color get backgroundColor => const Color(0xFFFFFFFF);
 
-  static ThemeData get theme {
+  @override
+  Color get beginGradientColor => const Color(0xFFFF00D6);
+
+  @override
+  Color get endGradientColor => const Color(0xFFFF4D00);
+
+  @override
+  ThemeData get theme {
     return ThemeData(
       brightness: Brightness.light,
       backgroundColor: backgroundColor,
