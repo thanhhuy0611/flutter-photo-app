@@ -43,13 +43,17 @@ class SplashScreen extends StatelessWidget {
       floatingActionButton: const SettingThemeFloatingButton(),
       floatingActionButtonLocation: SettingThemeFloatingButton.location,
       body: SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: const [
-            AuthorInfoWidget(),
-            SplashActionButtonsWidget(),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: const [
+              AuthorInfoWidget(),
+              SizedBox(height: 16.0),
+              SplashActionButtonsWidget(),
+            ],
+          ),
         ),
       ),
     );

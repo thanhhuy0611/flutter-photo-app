@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:photo_app/screens/discover/index.dart';
 import 'package:photo_app/widget/button/elevated_button.dart';
 import 'package:photo_app/widget/floating_button.dart';
 import 'package:photo_app/widget/input_field_decoration.dart';
@@ -17,7 +19,7 @@ class LoginScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Image.asset('assets/images/back_icon.png',
+          icon: SvgPicture.asset('assets/images/back_icon.svg',
             fit: BoxFit.contain,
             width: 12,
             height: 12,
@@ -71,8 +73,7 @@ class LoginScreen extends StatelessWidget {
                 CustomElevatedButton(
                   label: (AppLocalizations.of(context)!.log_in).toUpperCase(),
                   onTap: () {
-                    // TODO: to discover page
-                    // Navigator.of(context).pushNamed(LoginScreen.PAGE_NAME);
+                    Navigator.of(context).pushNamed(DiscoverScreen.PAGE_NAME);
                   },
                 ),
               ],

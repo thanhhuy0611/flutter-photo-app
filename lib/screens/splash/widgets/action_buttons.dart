@@ -7,33 +7,30 @@ class SplashActionButtonsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(16.0),
-      child: Row(
-        children: [
-          // Login button
-          Flexible(
-            flex: 1,
-            child: CustomOutlinedButton(
-              label: (AppLocalizations.of(context)!.log_in).toUpperCase(),
-              onTap: () {
-                Navigator.of(context).pushNamed(LoginScreen.PAGE_NAME);
-              },
-            ),
+    return Row(
+      children: [
+        // Login button
+        Flexible(
+          flex: 1,
+          child: CustomOutlinedButton(
+            label: (AppLocalizations.of(context)!.log_in).toUpperCase(),
+            onTap: () {
+              Navigator.of(context).pushNamed(LoginScreen.PAGE_NAME);
+            },
           ),
-          const SizedBox(width: 12),
-          // Register button
-          Flexible(
-            flex: 1,
-            child: CustomElevatedButton(
-              label: (AppLocalizations.of(context)!.register).toUpperCase(),
-              onTap: () {
-                Navigator.of(context).pushNamed(RegisterScreen.PAGE_NAME);
-              },
-            ),
+        ),
+        const SizedBox(width: 12),
+        // Register button
+        Flexible(
+          flex: 1,
+          child: CustomElevatedButton(
+            label: (AppLocalizations.of(context)!.register).toUpperCase(),
+            onTap: () {
+              Navigator.of(context).pushNamed(RegisterScreen.PAGE_NAME);
+            },
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

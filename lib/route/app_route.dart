@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:photo_app/screens/discover/index.dart';
 import 'package:photo_app/screens/login/index.dart';
 import 'package:photo_app/screens/register/index.dart';
 import 'package:photo_app/screens/splash/index.dart';
@@ -14,6 +15,9 @@ class AppPageRoute {
 
           case RegisterScreen.PAGE_NAME:
             return const RegisterScreen();
+
+          case DiscoverScreen.PAGE_NAME:
+            return const DiscoverScreen();
 
           case SplashScreen.PAGE_NAME:
           default:
