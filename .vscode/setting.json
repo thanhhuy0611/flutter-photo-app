@@ -12,7 +12,7 @@
   },
   "dart.previewLsp": true,
   "dart.analysisExcludedFolders": [
-    "**/.dart_tool/**",
+    "**/.dart_tool/flutter_build/**",
     "**/ios/**",
     "**/android/**",
     "**/assets/**",
