@@ -31,6 +31,7 @@ dependencies:
 
   # support UI
   cupertino_icons: ^1.0.2
+  adaptive_theme: ^2.2.0
 
   # State management
   flutter_bloc: ^7.1.0
