@@ -33,8 +33,9 @@ class ElevatedButtonDecoration {
   }) {
     return ElevatedButton.styleFrom(
       minimumSize: Size(double.infinity, height),
-      primary: color ?? Theme.of(context).primaryColor,
-      onSurface: Theme.of(context).primaryColor,
+      primary: color,
+      onSurface: color,
+      shadowColor: color,
       shape: const StadiumBorder(),
       elevation: elevation,
     );

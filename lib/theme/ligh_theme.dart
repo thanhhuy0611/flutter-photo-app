@@ -12,12 +12,6 @@ class LightTheme extends BaseTheme {
   Color get backgroundColor => const Color(0xFFFFFFFF);
 
   @override
-  Color get beginGradientColor => const Color(0xFFFF00D6);
-
-  @override
-  Color get endGradientColor => const Color(0xFFFF4D00);
-
-  @override
   ThemeData get theme {
     return ThemeData(
       brightness: Brightness.light,

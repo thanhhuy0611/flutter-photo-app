@@ -18,8 +18,6 @@ abstract class BaseTheme {
 
   Color get primaryColor;
   Color get backgroundColor;
-  Color get beginGradientColor;
-  Color get endGradientColor;
 
   ThemeData get theme;
 }
