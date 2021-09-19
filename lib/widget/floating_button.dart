@@ -11,7 +11,7 @@ class SettingThemeFloatingButton extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(50),
       child: Container(
-        color: Theme.of(context).backgroundColor.withOpacity(0.5),
+        color: Theme.of(context).primaryColor.withOpacity(0.5),
         child: IconButton(
           icon: isDarkMode
               ? const Icon(Icons.light_mode_rounded, color: Colors.amber)

@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:photo_app/widget/author_info.dart';
 import 'package:photo_app/widget/button/elevated_button.dart';
 import 'package:photo_app/widget/button/outlined_button.dart';
+import 'package:photo_app/widget/floating_button.dart';
+
+part 'widgets/action_buttons.dart';
 
 class SplashScreen extends StatelessWidget {
   static const PAGE_NAME = '/';
@@ -26,39 +30,26 @@ class SplashScreen extends StatelessWidget {
           width: size.width/2,
           fit: BoxFit.contain,
         ),
-        Column(
+        _buildForceground(context),
+      ],
+    );
+  }
+
+  Widget _buildForceground(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+      floatingActionButton: const SettingThemeFloatingButton(),
+      floatingActionButtonLocation: SettingThemeFloatingButton.location,
+      body: SafeArea(
+        child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  Flexible(
-                    flex: 1,
-                    child: CustomOutlinedButton(
-                      label: (AppLocalizations.of(context)!.log_in).toUpperCase(),
-                      onTap: () {
-                        // TODO 
-                      },
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Flexible(
-                    flex: 1,
-                    child: CustomElevatedButton(
-                      label: (AppLocalizations.of(context)!.register).toUpperCase(),
-                      onTap: () {
-                        // TODO 
-                      },
-                    ),
-                  ),
-                ],
-              ),
-            )
+          children: const [
+            AuthorInfoWidget(),
+            SplashActionButtonsWidget(),
           ],
         ),
-      ],
+      ),
     );
   }
 }
