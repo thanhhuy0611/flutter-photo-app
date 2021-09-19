@@ -28,7 +28,7 @@ class SplashActionButtonsWidget extends StatelessWidget {
             child: CustomElevatedButton(
               label: (AppLocalizations.of(context)!.register).toUpperCase(),
               onTap: () {
-                // TODO 
+                Navigator.of(context).pushNamed(RegisterScreen.PAGE_NAME);
               },
             ),
           ),
