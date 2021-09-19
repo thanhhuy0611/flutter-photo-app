@@ -26,8 +26,7 @@ echo "  1) android"
 echo "  2) ios"
 echo "  3) run build_runner"
 echo "  4) run build_runner with delete conflicting"
-echo "  5) generate translations"
-echo "  6) watch build_runner"
+
 
 read n
 case $n in
@@ -47,7 +46,5 @@ case $n in
   4) echo "generating...";
      flutter_generate_delete_conflicting;
      echo "build_runner finished";;
-  5) get generate locales assets/locales;;
-  6) flutter pub get;
-     flutter packages pub run build_runner watch;;
+
 esac

@@ -28,11 +28,12 @@ assets
 └── images // Asset images
 lib
 ├── common // Global variable
+├── l10n // localization config
 ├── helper // Helper utility classes
 ├── model // Modals of data
 ├── repository // Repositories for API communication
 ├── route // Route settings
 ├── theme // Theme file
-├── view // View directories 
+├── screens // View directories 
 └── widget // Widgets used across the pages
 ```
