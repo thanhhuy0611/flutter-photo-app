@@ -4,7 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:photo_app/common/global_config.dart';
-import 'package:photo_app/repository/user_setting.dart';
+import 'package:photo_app/repository/photo_repository.dart';
+import 'package:photo_app/repository/user_setting_repository.dart';
 import 'package:photo_app/route/app_route.dart';
 import 'package:photo_app/screens/app/cubit/app_cubit.dart';
 import 'package:photo_app/theme/dark_theme.dart';
@@ -27,10 +28,9 @@ class PhotoApp extends StatelessWidget {
             ref: preferences,
           ),
         ),
-        //TODO: add repository
-        // RepositoryProvider(
-        //   create: (context) => PhotoRepository(),
-        // ),
+        RepositoryProvider(
+          create: (context) => PhotoRepository(),
+        ),
       ],
       child: BlocProvider<AppCubit>(
         create: (context) => AppCubit(

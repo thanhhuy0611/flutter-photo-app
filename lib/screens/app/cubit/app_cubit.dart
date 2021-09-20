@@ -1,8 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:photo_app/common/global_config.dart';
 import 'package:photo_app/model/user_setting.dart';
-import 'package:photo_app/repository/user_setting.dart';
+import 'package:photo_app/repository/user_setting_repository.dart';
 
 part 'app_state.dart';
 
