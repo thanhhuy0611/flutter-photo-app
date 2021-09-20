@@ -1,5 +1,16 @@
 # Photo App
 
+### Requirement
+- [x] Complete UI as design.
+- [x] Use bloc to manage State
+- [x] Implement internationalization (en, vi)
+
+- [ ] Apply MVVM architecture.
+- [x] Clear and re-useable code structure
+- [x] Responsive on mobile, tablet, Web
+- [x] Works with DarkMode
+- [x] Pedantic Integration | analyzer | linter to code beautify
+- [x] Init project using github, broken down into clear commits
 ### Local Setup
 We use the following tools with specified version.
 
